@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Users</title>
+        <style>
+            table,th,tr {
+                border: 1px solid black;
+            }
+            table {
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <p>Power level 1 is for normal users and level 2 for admins</p>
+        <a href="/panel">Back to panel</a>
+        <a href="/user_add">Add user</a>
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>User</th>
+                <th>Power</th>
+            </tr>
+            {{#table}}
+                <tr>
+                    <th><a href="{{op_link}}">{{id}}</a></th>
+                    <th>{{username}}</th>
+                    <th>{{power}}</th>
+                </tr>
+            {{/table}}
+        </table>
+        </table>
+    </body>
+</html>

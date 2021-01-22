@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <title>Login</title>
+        <style>
+            table,th,tr {
+                border: 1px solid black;
+            }
+            table {
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        {{#show_message}}
+                <p>To edit or remove a row, click on the id link of it</p>
+                <p>To add a row, click on <a href="/data_add">this</a> link</p>
+                <a href="/users">Users controll panel</a>
+        {{/show_message}}
+            
+        {{#show_next}}
+            <a href="/panel?page={{Next}}">Next</a>
+        {{/show_next}}
+
+        {{#show_back}}
+            <a href="/panel?page={{Back}}">Back</a>
+        {{/show_back}}
+
+        <table>
+            <tr>
+                <th><a href="">ID</a></th>
+                <th>File name</th>
+                <th>Date</th>
+                <th>Count</th>
+                <th>Price</th>
+                <th>Total</th>
+                <th>user1 precedent</th>
+                <th>user2 precedent</th>
+                <th>user3 precedent</th>
+                <th>user4 precedent</th>
+                <th>user5 precedent</th>
+                <th>user1 share</th>
+                <th>user2 share</th>
+                <th>user3 share</th>
+                <th>user4 share</th>
+                <th>user5 share</th>
+                <th>Description</th>
+            </tr>
+            
+
+            {{#table}}
+                <tr>
+                    <th><a href="{{op_link}}">{{id}}</a></th>
+                    <th>{{file_name}}</th>
+                    <th>{{date}}</th>
+                    <th>{{count}}</th>
+                    <th>{{price}}</th>
+                    <th>{{total}}</th>
+
+                    <th>{{user1_precedent}}</th>
+                    <th>{{user2_precedent}}</th>
+                    <th>{{user3_precedent}}</th>
+                    <th>{{user4_precedent}}</th>
+                    <th>{{user5_precedent}}</th>
+                    
+                    <th>{{user1_share}}</th>
+                    <th>{{user2_share}}</th>
+                    <th>{{user3_share}}</th>
+                    <th>{{user4_share}}</th>
+                    <th>{{user5_share}}</th>
+
+                    <th>{{desc}}</th>
+                </tr>
+            {{/table}}
+        </table>
+    </body>
+</html>

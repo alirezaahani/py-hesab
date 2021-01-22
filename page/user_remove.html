@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>User remove</title>
+        <style>
+            table,th,tr {
+                border: 1px solid black;
+            }
+            table {
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        {{#show_message}}
+            <p>{{message}}</p>
+            <a href="/users">Back to panel</a>
+        {{/show_message}}
+        
+        {{#show_controlls}}
+            <a href="/user_remove?user_id={{id}}&confirm=True">Ok</a>
+            <a href="/user_remove?user_id={{id}}&confirm=False">Cancel</a>
+        {{/show_controlls}}
+        
+    </body>
+</html>

@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Data remove</title>
+        <style>
+            table,th,tr {
+                border: 1px solid black;
+            }
+            table {
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+            {{#show_message}}
+                <p>{{message}}</p>
+                <a href="/panel">Back to panel</a>
+            {{/show_message}}
+            
+            {{#show_controlls}}
+                <a href="/data_remove?file_id={{file_id}}&confirm=True">Ok</a>
+                <a href="/data_remove?file_id={{file_id}}&confirm=False">Cancel</a>
+            {{/show_controlls}}
+            
+    </body>
+</html>

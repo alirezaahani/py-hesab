@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>Add</title>
+        <style>
+            table,th,tr {
+                border: 1px solid black;
+            }
+            table {
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>        
+        <form action="/data_add_proc" method="post">
+            <table>
+                <tr>
+                    <th>File name</th>
+                    <th>Date</th>
+                    <th>Count</th>
+                    <th>Price</th>
+                    <th>user1 precedent</th>
+                    <th>user2 precedent</th>
+                    <th>user3 precedent</th>
+                    <th>user4 precedent</th>
+                    <th>user5 precedent</th>
+                    <th>Description</th>
+                </tr>
+
+                <tr>
+                    <th><input name="file_name"/></th>
+                    <th><input name="date"/></th>
+                    <th><input name="count"/></th>
+                    <th><input name="price"/></th>
+                    <th><input name="user1_precedent"/></th>
+                    <th><input name="user2_precedent"/></th>
+                    <th><input name="user3_precedent"/></th>
+                    <th><input name="user4_precedent"/></th>
+                    <th><input name="user5_precedent"/></th>
+                    <th><textarea name="desc"></textarea></th>
+                </tr>
+            </table>
+            <button type="submit">Add</button>
+        </form>
+    </body>
+</html>

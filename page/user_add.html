@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Add</title>
+        <style>
+            table,th,tr {
+                border: 1px solid black;
+            }
+            table {
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>        
+        <form action="/user_add_proc" method="post">
+            <table>
+                <tr>
+                    <th>Username</th>
+                    <th>Password</th>
+                    <th>Power level</th>
+                </tr>
+
+                <tr>
+                    <th><input name="username"/></th>
+                    <th><input name="password" type="password"/></th>
+                    <th>
+                        <select name="Power level">
+                            <option value="1">Normal user</option>
+                            <option value="2">Admin</option>
+                        </select>
+                    </th>
+                </tr>
+            </table>
+            <button type="submit">Add</button>
+        </form>
+    </body>
+</html>

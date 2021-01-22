@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Login</title>
+    </head>
+    <body>
+        {{#form}}
+            <form action="/login" method="post">
+                Login form <br>
+                Username : <input name="username" /> <br>
+                Password : <input type="password" name="password" /> <br>
+                <button type="submit">Login</button>
+            </form>
+        {{/form}}
+        
+        {{#show_message}}
+                <p>{{message}}</p>
+        {{/show_message}}
+    </body>
+</html>

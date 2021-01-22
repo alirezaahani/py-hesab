@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>Edit</title>
+        <style>
+            table,th,tr {
+                border: 1px solid black;
+            }
+            table {
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        {{#show_message}}
+            <p>{{message}}</p>
+            <a href="/panel">Back to panel</a>
+        {{/show_message}}
+        
+        <form action="/data_edit_proc" method="post">
+            <table>
+                <tr>
+                    <th style='display: none;'>ID</th>
+                    <th>File name</th>
+                    <th>Date</th>
+                    <th>Count</th>
+                    <th>Price</th>
+                    <th>user1 precedent</th>
+                    <th>user2 precedent</th>
+                    <th>user3 precedent</th>
+                    <th>user4 precedent</th>
+                    <th>user5 precedent</th>
+                    <th>Description</th>
+                </tr>
+
+                <tr>
+                    <th style='display: none;'><input name="id" value="{{id}}"/></th>
+                    <th><input name="file_name" value="{{file_name}}"/></th>
+                    <th><input name="date" value="{{date}}"/></th>
+                    <th><input name="count" value="{{count}}"/></th>
+                    <th><input name="price" value="{{price}}"/></th>
+                    <th><input name="user1_precedent" value="{{user1_precedent}}"/></th>
+                    <th><input name="user2_precedent" value="{{user2_precedent}}"/></th>
+                    <th><input name="user3_precedent" value="{{user3_precedent}}"/></th>
+                    <th><input name="user4_precedent" value="{{user4_precedent}}"/></th>
+                    <th><input name="user5_precedent" value="{{user5_precedent}}"/></th>
+                    <th><textarea name="desc">{{desc}}</textarea></th>
+                </tr>
+            </table>
+            <button type="submit">Edit</button>
+        </form>
+    </body>
+</html>

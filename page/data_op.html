@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>Op</title>
+    </head>
+    <body>
+        {{#show_controlls}}
+            <a href="/data_remove?file_id={{id}}">Remove</a>
+            <a href="/data_edit?file_id={{id}}">Edit</a>
+        {{/show_controlls}}
+        
+        {{#show_message}}
+                <p>{{message}}</p>
+        {{/show_message}}
+    </body>
+</html>

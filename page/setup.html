@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Setup</title>
+    </head>
+    <body>
+        Please enter a username and password for the admin: <br>
+        {{#form}}
+            <form action="/index" method="post">
+                Username : <input name="username" /> <br>
+                Password : <input type="password" name="password" /> <br>
+                <button type="submit">Setup</button>
+            </form>
+        {{/form}}
+        
+        {{#show_message}}
+            <p>{{message}}</p>
+        {{/show_message}}
+    </body>
+</html>
